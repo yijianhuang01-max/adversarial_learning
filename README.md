@@ -40,7 +40,3 @@ python scripts/train_adv.py --dataset-root data --epochs 20 --attack-epsilon 0.0
 ```powershell
 python scripts/evaluate_attack.py --dataset-root data --attack fgsm --epsilons 0,0.00784,0.01569,0.03137 --download-method wget
 ```
-
-## Notes
-
-- The local workspace does not need to match the remote training environment.`r`n- On Linux servers, `--download-method wget` uses the official CIFAR-10 archive directly and avoids the slower `torchvision` downloader.
